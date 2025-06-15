@@ -1,7 +1,7 @@
 rm -rf /usr/local/sdm
 rm -rf /usr/local/bin/sdm
 rm -rf /etc/sdm
-usrname = "multipi"
+usrname=$(logname)
 echo "alias spo=\"sudo poweroff\"" >> /home/$usrname/.bashrc # - not working
 echo "alias spr=\"sudo reboot\"" >> /home/$usrname/.bashrc # - not working 
 sed -i "s/#FallbackNTP/FallbackNTP/g" /etc/systemd/timesyncd.conf # Setup NTP
