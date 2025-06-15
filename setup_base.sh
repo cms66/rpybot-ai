@@ -10,4 +10,4 @@ sed -i "s/#FallbackNTP/FallbackNTP/g" /etc/systemd/timesyncd.conf # Setup NTP
 #echo "dtoverlay=imx219,cam0" >> /boot/firmware/config.txt
 #dtoverlay=imx708,cam0
 #dtoverlay=imx708,cam1
-
+apt-get -y install python3-dev gfortran libraspberrypi-dev libomp-dev git-core cmake pkg-config screen stress-ng fail2ban ufw ntpdate libmunge-dev munge python3-setuptools libgpiod-dev
