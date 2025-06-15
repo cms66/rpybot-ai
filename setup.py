@@ -4,7 +4,7 @@ import  subprocess, sys, os, urllib.request
 
 def main():
     print("Setup")
-    bashfile = "base_setup.sh"
+    bashfile = "setup_base.sh"
     bashurl = "https://raw.githubusercontent.com/cms66/rpybot-ai/main/" + bashfile
     try:
         urllib.request.urlretrieve(bashurl, bashfile) # Download bash script
