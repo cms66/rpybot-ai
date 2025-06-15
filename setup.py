@@ -5,7 +5,7 @@ import  subprocess, sys, os, urllib.request
 def main():
     print("Setup")
     bashfile = "base_setup.sh"
-    bashurl = "https://raw.githubusercontent.com/cms66/rpi-pycluster/main/" + bashfile
+    bashurl = "https://raw.githubusercontent.com/cms66/rpybot-ai/main/" + bashfile
     try:
         urllib.request.urlretrieve(bashurl, bashfile) # Download bash script
         subprocess.run(["sudo", "bash", "./" + bashfile], check=True) # Sudo run bash script
